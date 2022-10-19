@@ -35,3 +35,11 @@ function operate(operator, number1, number2) {
             return divide(number1, number2);
     }
 };
+
+
+//get DOM elements
+const numberButton = document.querySelectorAll(".num");
+const operatorButton = document.querySelectorAll(".oper");
+const clearButton = document.querySelector(".clear");
+const equalButton = document.querySelector(".equal");
+
