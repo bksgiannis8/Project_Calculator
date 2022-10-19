@@ -42,4 +42,13 @@ const numberButton = document.querySelectorAll(".num");
 const operatorButton = document.querySelectorAll(".oper");
 const clearButton = document.querySelector(".clear");
 const equalButton = document.querySelector(".equal");
+const calcDisplay = document.querySelector(".screen");
+calcDisplay.textContent=0
+let total=""
 
+numberButton.forEach((number => {
+    number.addEventListener("click", function() {
+        total += number.id;
+        calcDisplay.textContent = total
+    })
+}))
