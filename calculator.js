@@ -1,19 +1,37 @@
-function addNumbers(number1, number2) {
+// function for addition
+function add(number1, number2) {
     const addition = number1 + number2;
     return addition;
 }
 
-function subtractNumbers(number1, number2) {
+//function for subtraction
+function subtract(number1, number2) {
     const subtraction = number1 - number2;
     return subtraction;
 }
 
-function multiplyNumbers(number1, number2) {
+// function for multiplication
+function multiply(number1, number2) {
     const multiplication = number1 * number2;
-    return multiplication
+    return multiplication;
 }
 
-function divideNumbers(number1, number2) {
+// function for division
+function divide(number1, number2) {
     const division = number1 / number2;
-    return division
+    return division;
 }
+
+// function that takes an operator and two number and retyrns the outcome
+function operate(operator, number1, number2) {
+    switch (operator) {
+        case "+":
+            return add(number1, number2);
+        case "-":
+            return subtract(number1, number2);
+        case "+":
+            return multiply(number1, number2);
+        case "+":
+            return divide(number1, number2);
+    }
+};
