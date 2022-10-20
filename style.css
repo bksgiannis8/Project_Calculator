@@ -12,6 +12,7 @@
     background-color: lightgreen;
     border: 10%;
     height: 100px;
+    font-size: 45px;
 }
 
 .buttons {
@@ -30,3 +31,10 @@ button {
     font-size: 50px;
 }
 
+.clear {
+    background-color: lightcoral;
+}
+
+.oper, .equal {
+    background-color: lightskyblue;
+}
