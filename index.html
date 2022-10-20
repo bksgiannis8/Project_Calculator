@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Calculator</title>
-    <link rel=¨stylesheet¨ type=¨text/css¨ href=¨style.css¨>
-    <script src="calculator.js"></script>
+    <link rel=¨stylesheet¨ href=¨style.css¨>
 </head>
 <body>
     <div class="main">
-        <div class="screen">display</div>
+        <div class="screen">
+            <div class="previous-operand">473</div>
+            <div class="current-operand">3281</div>
+        </div>
         <div class="buttons">
             <button class="num" id="7">7</button>
             <button class="num" id="8">8</button>
@@ -28,8 +30,8 @@
             <button class="num" id="0">0</button>
             <button class="equal" id="=">=</button>
             <button class="oper" id="+">+</button>
+        </div>
     </div>
-
-    </div>
+    <script src="calculator.js"></script>
 </body>
 </html>
