@@ -23,15 +23,15 @@ function divide(number1, number2) {
 }
 
 // function that takes an operator and two number and retyrns the outcome
-function operate(operator, number1, number2) {
+function operate(number1, number2, operator) {
     switch (operator) {
         case "+":
             return add(number1, number2);
         case "-":
             return subtract(number1, number2);
-        case "+":
+        case "*":
             return multiply(number1, number2);
-        case "+":
+        case "/":
             return divide(number1, number2);
     }
 };
@@ -44,6 +44,7 @@ const clearButton = document.querySelector(".clear");
 const equalButton = document.querySelector(".equal");
 const currentOperand = document.querySelector('.current-operand');
 const previousOperand = document.querySelector('.previous-operand');
+const showResult = document.querySelector('.result');
 
 
 currentOperand.textContent = ' ';
@@ -57,7 +58,7 @@ currentOperand.textContent = 0;
 numberButton.forEach((number => {
     number.addEventListener("click", function() {
         storedNumber += number.id;
-        calcDisplay.textContent = storedNumber
+        currentOperand.textContent = storedNumber;
     })
 }))
 
@@ -88,3 +89,8 @@ previousOperand.textContent = firstNumber + ' ' + clickedOperator + ' ' + stored
 storedNumber = result;
 console.log('FirstNumber' + firstNumber + 'Stored' + storedNumber);
 }
+
+clearButton.addEventListener("click", function() {
+    currentOperand.textContent = 0;
+    previousOperand.textContent = ' ';
+})
