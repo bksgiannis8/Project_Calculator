@@ -1,0 +1,32 @@
+
+.main {
+    background-color: black;
+    height: 500px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: auto;
+}
+.screen {
+    background-color: lightgreen;
+    border: 10%;
+    height: 100px;
+}
+
+.buttons {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 100px); 
+}
+button {
+    background-color: darkgray;
+    color: white;
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+}
+
