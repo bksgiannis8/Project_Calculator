@@ -42,12 +42,17 @@ const numberButton = document.querySelectorAll(".num");
 const operatorButton = document.querySelectorAll(".oper");
 const clearButton = document.querySelector(".clear");
 const equalButton = document.querySelector(".equal");
-const calcDisplay = document.querySelector(".screen");
-calcDisplay.textContent=0
+const currentOperand = document.querySelector('.current-operand');
+const previousOperand = document.querySelector('.previous-operand');
+
+
+currentOperand.textContent = ' ';
+previousOperand.textContent = ' ';
 let storedNumber = '';
 let clickedOperator = ''
 let firstNumber = '';
 let result = '';
+currentOperand.textContent = 0;
 
 numberButton.forEach((number => {
     number.addEventListener("click", function() {
